@@ -1,10 +1,10 @@
-# Generated from CLI/cuesplit.rb in the CueSplit repository on each release; edit it there.
+# Generated from Distribution/homebrew-tap/Casks/cuesplit.rb in the CueSplit repository on each release; edit it there.
 cask "cuesplit" do
-  version "0.1.0"
-  sha256 "5e9085065fdd1d401b0e15471d8d40e9474275407cb9befd650008bb79b180ec"
+  version "1.0.0"
+  sha256 "e5e1427f23def6550a3b760dc072159a5ff491e00c015b1450f3c7479360c562"
 
-  url "https://github.com/Galaco/cuesplit-cli/releases/download/v#{version}/cuesplit-#{version}-macos.zip"
-  name "cuesplit"
+  url "https://github.com/Galaco/cuesplit-cli/releases/download/v#{version}/CueSplit-#{version}.dmg"
+  name "CueSplit"
   desc "Split cue sheet images into tagged FLAC, Apple Lossless or AAC tracks"
   homepage "https://github.com/Galaco/cuesplit-cli"
 
@@ -15,11 +15,10 @@ cask "cuesplit" do
 
   depends_on macos: :sonoma
 
-  binary "cuesplit"
-  manpage "cuesplit.1"
-  bash_completion "cuesplit.bash"
-  zsh_completion "_cuesplit"
-  fish_completion "cuesplit.fish"
+  app "CueSplit.app"
 
-  # No zap stanza: cuesplit keeps no settings or caches.
+  zap trash: [
+    "~/Library/Application Scripts/me.galaco.cuesplit",
+    "~/Library/Containers/me.galaco.cuesplit",
+  ]
 end
