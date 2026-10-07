@@ -3,10 +3,10 @@ cask "cuesplit-cli" do
   version "1.0.0"
   sha256 "25640ef66e80003bc5fa40fa3f96b5334cfcadc619ba20b0e16ab21ed1d86567"
 
-  url "https://github.com/Galaco/cuesplit-cli/releases/download/v#{version}/cuesplit-#{version}-macos.zip"
+  url "https://github.com/Galaco/cuesplit-app/releases/download/v#{version}/cuesplit-#{version}-macos.zip"
   name "cuesplit"
   desc "Command-line tool to split cue sheet images into tagged tracks"
-  homepage "https://github.com/Galaco/cuesplit-cli"
+  homepage "https://github.com/Galaco/cuesplit-app"
 
   livecheck do
     url :url

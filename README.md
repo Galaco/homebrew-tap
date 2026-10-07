@@ -8,7 +8,7 @@ brew install galaco/tap/cuesplit-cli   # the cuesplit command-line tool
 
 | Cask | |
 |---|---|
-| [cuesplit](https://github.com/Galaco/cuesplit-cli) | CueSplit, the Mac app: split cue sheet images into tagged FLAC, Apple Lossless or AAC tracks |
-| [cuesplit-cli](https://github.com/Galaco/cuesplit-cli) | cuesplit, the same splitting from the command line |
+| [cuesplit](https://github.com/Galaco/cuesplit-app) | CueSplit, the Mac app: split cue sheet images into tagged FLAC, Apple Lossless or AAC tracks |
+| [cuesplit-cli](https://github.com/Galaco/cuesplit-app) | cuesplit, the same splitting from the command line |
 
 The casks are updated automatically when a new version is released.
